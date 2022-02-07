@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "sources": [
+        "../scss/cagri_merkezi_alt_yapi.scss"
+    ],
+    "names": [],
+    "file": "cagri_merkezi_alt_yapi.css"
+}

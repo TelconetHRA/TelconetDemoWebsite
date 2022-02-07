@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "sources": [
+        "../scss/kablolu_kablosuz_ag_cozumleri.scss"
+    ],
+    "names": [],
+    "file": "kablolu_kablosuz_ag_cozumleri.css"
+}

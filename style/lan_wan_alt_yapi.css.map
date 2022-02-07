@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/lan_wan_alt_yapi.scss"
+    ],
+    "names": [],
+    "file": "lan_wan_alt_yapi.css"
+}

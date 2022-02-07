@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/misyon_ve_vizyon.scss"
+    ],
+    "names": [],
+    "file": "misyon_ve_vizyon.css"
+}

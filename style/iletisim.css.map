@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "sources": [
+        "../scss/iletisim.scss"
+    ],
+    "names": [],
+    "file": "iletisim.css"
+}

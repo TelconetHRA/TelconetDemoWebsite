@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/sunucu_ve_veri_depolama_cozumleri.scss"
+    ],
+    "names": [],
+    "file": "sunucu_ve_veri_depolama_cozumleri.css"
+}

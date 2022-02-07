@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "sources": [
+        "../scss/referans.scss"
+    ],
+    "names": [],
+    "file": "referans.css"
+}

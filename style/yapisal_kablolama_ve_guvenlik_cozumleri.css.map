@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "sources": [
+        "../scss/yapisal_kablolama_ve_guvenlik_cozumleri.scss"
+    ],
+    "names": [],
+    "file": "yapisal_kablolama_ve_guvenlik_cozumleri.css"
+}

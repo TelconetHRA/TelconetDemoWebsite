@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "sources": [
+        "../scss/insan_kaynaklari.scss"
+    ],
+    "names": [],
+    "file": "insan_kaynaklari.css"
+}
