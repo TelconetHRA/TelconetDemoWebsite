@@ -1,0 +1,34 @@
+# Front-end Style Guide
+
+##Page Header : 35px;
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Gray color (Background) : #212529; 
+- Purple color: #312783;
+- Turquoise color: #007bff;
+- White color: #777;
+
+
+### Body Copy
+
+background-color: #FFF;
+color: #777;
+
+
+line-height: 26px;
+
+- Homepage Items: 14px
+- Detail Page: 16px 
+
+### Fonts
+
+- Family: 'Montserrat', sans-serif;
+- Font-size: 14px;
