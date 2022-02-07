@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+$Gray-bg-color: #212529; 
+$Purple-color: #312783;
+$Turquoise-color: #007bff;
+$White-color: #777;
+$body-bg-color: #FFF;
+$body-font-family: 'Montserrat', sans-serif;
+
+@mixin flexible-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin  flexible-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexible-row-flow {
+    display: flex;
+    flex-direction: row;
+}
+@mixin flexible-column-flow {
+        display: flex;
+        flex-direction: column;
+}
+@mixin flexible-row-space {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexible-row-space-around {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin flexible-column-space-around  {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
