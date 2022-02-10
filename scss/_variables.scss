@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+
 $Gray-bg-color: #212529; 
 $Purple-color: #312783;
 $Turquoise-color: #007bff;
 $White-color: #777;
 $body-bg-color: #FFF;
 $body-font-family: 'Montserrat', sans-serif;
+
 
 @mixin flexible-column-center {
     display: flex;

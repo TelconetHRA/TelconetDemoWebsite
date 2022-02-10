@@ -1,2 +1,11 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("_variables");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */
