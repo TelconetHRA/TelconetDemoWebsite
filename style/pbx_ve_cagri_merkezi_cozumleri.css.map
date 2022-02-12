@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
     "sources": [
-        "../scss/pbx_ve_cagri_merkezi_cozumleri.scss"
+        "../scss/pbx_ve_cagri_merkezi_cozumleri.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "pbx_ve_cagri_merkezi_cozumleri.css"

@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
     "sources": [
-        "../scss/misyon_ve_vizyon.scss"
+        "../scss/misyon_ve_vizyon.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "misyon_ve_vizyon.css"

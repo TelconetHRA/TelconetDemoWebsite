@@ -1,4 +1,4 @@
-@import url('_variables');
+@import "_variables";
 *{
    box-sizing:border-box;
 }
@@ -8,5 +8,10 @@ body{
 }
 
 
-
+.homepage-container{
+    .navbar-container{
+       @include flexible-row-center;
+        border: 1px solid red;
+    }
+}
 
