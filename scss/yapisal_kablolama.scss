@@ -1,6 +1,4 @@
-
-@import url('_veriables');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+@import "_variables";
 
 aside {
     padding-left: .5rem;
@@ -413,5 +411,4 @@ ul {
   i {
     color: #fff;
   }
-@import "_variables";
-
+}
