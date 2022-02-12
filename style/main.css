@@ -1,5 +1,9 @@
 
+@charset "UTF-8";
+
+
 @import url("_veriables");
+
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 * {
@@ -20,13 +24,59 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid red;
+  background-color: black;
+  color: white;
+  /* bunu sileceksin */
+}
+
+.homepage-container .navbar-container a {
+  color: white;
+  /* a tagınıda sileceksin */
+}
+
+.homepage-container .navbar-container .nav-img {
+  border: 1px solid white;
+}
+
+.homepage-container .navbar-container .nav-img img {
+  height: 6.5vh;
+}
+
+.homepage-container .navbar-container .nav-content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+}
+
+.homepage-container .navbar-container .nav-content-left .drop-down {
+  /* buradan kaldın */
+}
+
+.homepage-container .navbar-container .nav-content-left .drop-down ul {
+  display: none;
+  /* Hover modunda display block olacak */
+}
+
+.homepage-container .navbar-container .nav-content-left .drop-down a {
+  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
