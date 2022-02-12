@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
     "sources": [
-        "../scss/ip_telefon_alt_yapi.scss"
+        "../scss/ip_telefon_alt_yapi.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "ip_telefon_alt_yapi.css"

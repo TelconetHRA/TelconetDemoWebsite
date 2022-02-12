@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
     "sources": [
-        "../scss/kablosuz_aglar.scss"
+        "../scss/kablosuz_aglar.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "kablosuz_aglar.css"

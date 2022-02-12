@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
     "sources": [
-        "../scss/hakkimizda.scss"
+        "../scss/hakkimizda.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "hakkimizda.css"

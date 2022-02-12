@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
     "sources": [
-        "../scss/yapisal_kablolama.scss"
+        "../scss/yapisal_kablolama.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "yapisal_kablolama.css"
