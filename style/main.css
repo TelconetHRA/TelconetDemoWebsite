@@ -68,4 +68,8 @@ body {
   display: none;
   /* Hover modunda display block olacak */
 }
+
+.homepage-container .navbar-container .nav-content-left .drop-down a {
+  color: red;
+}
 /*# sourceMappingURL=main.css.map */
