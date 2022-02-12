@@ -10,8 +10,29 @@ body{
 
 .homepage-container{
     .navbar-container{
-       @include flexible-row-center;
+       @include flexible-row-space;
         border: 1px solid red;
+        background-color: black;
+        color: white; /* bunu sileceksin */
+        a{
+            color: white; /* a tagınıda sileceksin */
+        }
+
+        .nav-img{
+            border: 1px solid white;
+            img{
+                height: 6.5vh;
+            }
+        }
+        .nav-content-left{
+            @include flexible-row-space;
+            border: 1px solid white;
+            .drop-down{
+                ul{
+                    display: none; /* Hover modunda display block olacak */
+                }
+            }
+        }
     }
 }
 
