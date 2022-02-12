@@ -27,7 +27,7 @@ body{
         .nav-content-left{
             @include flexible-row-space;
             border: 1px solid white;
-            .drop-down{
+            .drop-down{/* buradan kaldın */
                 ul{
                     display: none; /* Hover modunda display block olacak */
                 }

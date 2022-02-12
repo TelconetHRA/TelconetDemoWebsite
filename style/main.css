@@ -60,6 +60,10 @@ body {
   border: 1px solid white;
 }
 
+.homepage-container .navbar-container .nav-content-left .drop-down {
+  /* buradan kaldın */
+}
+
 .homepage-container .navbar-container .nav-content-left .drop-down ul {
   display: none;
   /* Hover modunda display block olacak */
