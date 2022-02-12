@@ -1,4 +1,10 @@
+
 @charset "UTF-8";
+
+
+@import url("_veriables");
+
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -72,4 +78,5 @@ body {
 .homepage-container .navbar-container .nav-content-left .drop-down a {
   color: red;
 }
+
 /*# sourceMappingURL=main.css.map */
