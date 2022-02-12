@@ -1,8 +1,13 @@
 {
     "version": 3,
+
     "mappings": "AAAA,OAAO,CAAC,iBAAI",
+
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
+
     "sources": [
-        "../scss/sunucu_ve_veri_depolama_cozumleri.scss"
+        "../scss/sunucu_ve_veri_depolama_cozumleri.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "sunucu_ve_veri_depolama_cozumleri.css"

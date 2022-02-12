@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iBAAI",
+    "mappings": "ACAA,OAAO,CAAC,gGAAI",
     "sources": [
-        "../scss/referans.scss"
+        "../scss/referans.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "referans.css"

@@ -1,1 +1,17 @@
-@import url('_veriables');
+@import "_variables";
+*{
+   box-sizing:border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.homepage-container{
+    .navbar-container{
+       @include flexible-row-center;
+        border: 1px solid red;
+    }
+}
+
