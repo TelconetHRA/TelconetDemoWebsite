@@ -1,18 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+@-webkit-keyframes ul-arrow-animation {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-0.4em);
+  }
+}
+
 aside {
   padding-left: .5rem;
   margin-left: .5rem;
   float: right;
 }
 
-.main-header {
+aside ul.nav-list > li > a {
+  color: #666;
+  font-size: .9em;
+  padding: 8px 0px 20px 5px;
+}
+
+.page-header {
   margin: 0 0 35px 0;
   padding: 30px 0;
   position: relative;
   text-align: left;
 }
 
-.main-header h1 {
+.page-header h1 {
   color: #fff;
   display: inline-block;
   font-size: 30px;
@@ -24,82 +39,24 @@ aside {
   top: 1px;
 }
 
-.main-header.main-header-sm {
+.page-header.main-header-sm {
   padding: 30px 0;
 }
 
-.main-header.main-header-sm h1 {
+.page-header.main-header-sm h1 {
   font-size: 22px;
 }
 
-.main-header.main-header-lg {
+.page-header.main-header-lg {
   padding: 50px 0;
 }
 
-.main-header.main-header-lg h1 {
+.page-header.main-header-lg h1 {
   font-size: 40px;
 }
 
-.main-header.main-header-classic:after {
-  content: '';
-  width: 100%;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.main-header.main-header-classic .main-header-title-border {
-  width: 0;
-  height: 5px;
-  position: absolute;
-  bottom: 0;
-  background: transparent;
-  z-index: 1;
-}
-
-.main-header.main-header-modern h1 {
+.page-header.main-header-modern h1 {
   font-size: 28px;
-}
-
-.main-header.main-header-modern.main-header-sm h1 {
-  font-size: 22px;
-}
-
-.main-header.main-header-modern.main-header-md {
-  padding: 50px 0;
-}
-
-.main-header.main-header-modern.main-header-lg {
-  padding: 65px 0;
-}
-
-.main-header.main-header-modern.main-header-lg h1 {
-  font-size: 32px;
-}
-
-.main-header.main-header-modern.main-header-background {
-  padding: 130px 0;
-  background-size: cover;
-}
-
-.main-header.main-header-modern.main-header-background.main-header-background-pattern {
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
-
-.main-header.main-header-modern.main-header-background.main-header-background-sm {
-  padding: 50px 0;
-}
-
-.main-header.main-header-modern.main-header-background.main-header-background-md {
-  padding: 150px 0;
-}
-
-.main-header.main-header-modern.main-header-background.main-header-background-lg {
-  padding: 250px 0;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -115,50 +72,32 @@ ul.nav-list li {
 }
 
 ul.nav-list li a {
-  -webkit-transition: background 0.1s;
-  transition: background 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   padding: 8px 0 8px 22px;
   display: block;
   color: #666;
-  font-size: 0.9em;
+  font-size: .9em;
   text-decoration: none;
   line-height: 20px;
 }
 
-ul.nav-list li a:before,
-ul.nav-list li a i[class*="fa-chevron-right"] {
-  position: absolute;
-  color: #212529;
-  top: 8px;
-  font-size: 7.2px;
-  font-size: 0.45rem;
-  opacity: 0.7;
-  -webkit-transform: translate3d(-1px, 0, 0);
-          transform: translate3d(-1px, 0, 0);
-  left: 12px;
+ul.nav-list li a i {
+  position: relative;
+  top: -1px;
+  font-size: 8px;
+  font-size: 0.5rem;
+  opacity: 0.8;
+  right: 8px;
 }
 
 ul.nav-list li a:hover {
   text-decoration: none;
 }
 
-ul.nav-list li a:hover:before,
-ul.nav-list li a:hover i[class*="fa-chevron-right"] {
-  -webkit-animation-name: arrowLeftRight;
-  animation-name: arrowLeftRight;
-  -webkit-animation-duration: 500ms;
-  animation-duration: 500ms;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-ul.nav-list li a i[class*="fa-chevron-right"] {
-  position: relative;
-  top: -1px;
-  font-size: 8px;
-  font-size: 0.5rem;
-  opacity: 0.8;
+ul.nav-list li a:hover i[class*="fa-chevron"] {
+  -webkit-animation: ul-arrow-animation 0.25s infinite alternate ease-in-out;
 }
 
 ul.nav-list li > a.active {
@@ -205,8 +144,8 @@ ul.nav-list-simple li {
 }
 
 ul.nav-list-simple li a {
-  -webkit-transition: background 0.1s;
-  transition: background 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   padding: 8px 0;
   display: block;
@@ -267,59 +206,40 @@ ul.nav-pills > li > a.active:hover, ul.nav-pills > li > a.active:focus {
   transition: ease opacity 300ms 100ms;
 }
 
-.overlay.overlay-op-1:hover:before, .overlay.overlay-op-1.overlay-show:before, .overlay.overlay-op-1.show:before {
-  opacity: 0.1;
+.overlay.overlay-op-1:before {
+  opacity: .1;
 }
 
-.overlay.overlay-op-2:hover:before, .overlay.overlay-op-2.overlay-show:before, .overlay.overlay-op-2.show:before {
-  opacity: 0.2;
+.overlay.overlay-op-2:before {
+  opacity: .2;
 }
 
-.overlay.overlay-op-3:hover:before, .overlay.overlay-op-3.overlay-show:before, .overlay.overlay-op-3.show:before {
-  opacity: 0.3;
+.overlay.overlay-op-3:before {
+  opacity: .3;
 }
 
-.overlay.overlay-op-4:hover:before, .overlay.overlay-op-4.overlay-show:before, .overlay.overlay-op-4.show:before {
-  opacity: 0.4;
+.overlay.overlay-op-4:before {
+  opacity: .4;
 }
 
-.overlay.overlay-op-5:hover:before, .overlay.overlay-op-5.overlay-show:before, .overlay.overlay-op-5.show:before {
-  opacity: 0.5;
+.overlay.overlay-op-5:before {
+  opacity: .5;
 }
 
-.overlay.overlay-op-6:hover:before, .overlay.overlay-op-6.overlay-show:before, .overlay.overlay-op-6.show:before {
-  opacity: 0.6;
+.overlay.overlay-op-6:before {
+  opacity: .6;
 }
 
-.overlay.overlay-op-7:hover:before, .overlay.overlay-op-7.overlay-show:before, .overlay.overlay-op-7.show:before {
-  opacity: 0.7;
+.overlay.overlay-op-7:before {
+  opacity: .7;
 }
 
-.overlay.overlay-op-8:hover:before, .overlay.overlay-op-8.overlay-show:before, .overlay.overlay-op-8.show:before {
-  opacity: 0.8;
+.overlay.overlay-op-8:before {
+  opacity: .8;
 }
 
-.overlay.overlay-op-9:hover:before, .overlay.overlay-op-9.overlay-show:before, .overlay.overlay-op-9.show:before {
-  opacity: 0.9;
-}
-
-.overlay.overlay-backward:hover:before, .overlay.overlay-backward.overlay-show:before, .overlay.overlay-backward.show:before {
-  z-index: 0;
-}
-
-.overlay .container,
-.overlay .container-fluid {
-  position: relative;
-  z-index: 3;
-}
-
-/*--------  Overlay Colors -------- */
-.overlay-light:before {
-  background-color: #FFF !important;
-}
-
-.overlay-dark:before {
-  background-color: #212529 !important;
+.overlay.overlay-op-9:before {
+  opacity: .9;
 }
 
 /*-------- Breadcrumb -------- */

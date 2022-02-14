@@ -18,58 +18,56 @@
     <header>
         <nav></nav>
     </header>
-    <main class="main-container">
-        <section class="main-header main-header-modern main-header-background overlay overlay-show overlay-op-8" :before
-            style="background-image: url('/image/main-1.jpg');">
-            <div class="container">
+    <main>
+        <section class="page-header"
+            style="background-image: url('/image/main-1.jpg');background-size: cover;padding:5%;">
+            <div class="container" style="border: 1px solid;">
                 <div class="row mt-5">
-                    <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        <h1>Yapısal Kablolama</h1>
-                    </div>
-                    <div class="col-md-12 align-self-center order-1">
+                    <div class="col-md-12 align-self-center">
                         <ul class="breadcrumbs d-block text-center">
                             <li><a href="/index.html">
-                                    <lang data-i18n="[html]anasayfa">Anasayfa</lang>
+                                    <lang>Anasayfa</lang>
                                 </a>
                             </li>
                             <i class="fa-solid fa-chevron-right"></i>
                             <li class="active"><a>Yapısal Kablolama</a></li>
                         </ul>
                     </div>
+                    <div class="col-md-12 align-self-center text-center">
+                        <h1>Yapısal Kablolama</h1>
+                    </div>
+                    
                 </div>
             </div>
         </section>
-            <section>
+            <section class="content">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-12 col-md-9 col-lg-9 mb-3">
                             <h1 class="font-weight-bold text-3 mb-0 text-uppercase">Yapısal Kablolama</h1>
                         </div>
+                        <aside class="aside">
+                            <h5 class="font-weight-bold pt-3">
+                                <lang data-i18n="[html]navigasyon">Navigasyon</lang>
+                            </h5>
+                            <ul class="nav nav-list flex-column mb-5">
+                                <li><a class="active" href="/views/yapisal_kablolama.html"
+                                        title="Yapısal Kablolama"><i class="fa-solid fa-chevron-right"></i>Yapısal Kablolama</a></li>
+                                <li><a class="" href="/views/ip_telefon_alt_yapi.html"
+                                        title="IP Telefon Altyapı"><i class="fa-solid fa-chevron-right"></i>IP Telefon Altyapı</a></li>
+                                <li><a class="" href="/views/cagri-merkezi-altyapi.html"
+                                        title="Çağrı Merkezi Altyapı"><i class="fa-solid fa-chevron-right"></i>Çağrı Merkezi Altyapı</a></li>
+                                <li><a class="" href="/views/lan-wan-altyapi.html"
+                                        title="LAN / WAN Altyapı"><i class="fa-solid fa-chevron-right"></i>LAN / WAN Altyapı</a></li>
+                                <li><a class="" href="/views/kablosuz-aglar.html"
+                                        title="Kablosuz Ağlar"><i class="fa-solid fa-chevron-right"></i>Kablosuz Ağlar</a>
+                                </li>
+                                <li><a class="" href="/views/sunucu-ve-veri-depolama.html"
+                                        title="Sunucu ve Veri Depolama"><i class="fa-solid fa-chevron-right"></i>Sunucu ve Veri Depolama</a></li>
+                            </ul>
+                        </aside>
                     </div>
-                    <aside class="sidenav">
-                        <h5 class="font-weight-bold pt-3">
-                            <lang data-i18n="[html]navigasyon">Navigasyon</lang>
-                        </h5>
-                        <ul class="nav nav-list flex-column mb-5">
-                            <li><a data-i18n="[html]page-43;[title]page-43" class="active" href="/views/yapisal_kablolama.html"
-                                    title="Yapısal Kablolama"><i class="fa-solid fa-chevron-right"></i>Yapısal
-                                    Kablolama</a></li>
-                            <li><a data-i18n="[html]page-44;[title]page-44" class="" href="/views/ip_telefon_alt_yapi.html"
-                                    title="IP Telefon Altyapı">IP Telefon
-                                    Altyapı</a></li>
-                            <li><a data-i18n="[html]page-45;[title]page-45" class="" href="/views/cagri-merkezi-altyapi.html"
-                                    title="Çağrı Merkezi Altyapı">Çağrı
-                                    Merkezi Altyapı</a></li>
-                            <li><a data-i18n="[html]page-46;[title]page-46" class="" href="/views/lan-wan-altyapi.html"
-                                    title="LAN / WAN Altyapı">LAN / WAN
-                                    Altyapı</a></li>
-                            <li><a data-i18n="[html]page-47;[title]page-47" class="" href="/views/kablosuz-aglar.html"
-                                    title="Kablosuz Ağlar">Kablosuz Ağlar</a>
-                            </li>
-                            <li><a data-i18n="[html]page-48;[title]page-48" class="" href="/views/sunucu-ve-veri-depolama.html"
-                                    title="Sunucu ve Veri Depolama">Sunucu ve Veri Depolama</a></li>
-                        </ul>
-                    </aside>
+
                 </div>
                 
             </section>
