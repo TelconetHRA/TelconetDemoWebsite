@@ -15,11 +15,11 @@
         <div class="nav-img">
           <img src="image/navbar-logo.svg" alt="#" />
         </div>
-        <div class="nav-content-left">
-          <a href="index.html">ANASAYFA</a>
+        <div class="nav-content-right">
+          <a class="nav-link-header" href="index.html">ANASAYFA</a>
           <div class="drop-down drop-one">
-            <a href="#">ÇÖZÜMLER</a>
-            <ul>
+            <a class="nav-drop" href="#">ÇÖZÜMLER</a>
+            <ul class="drop-list">
               <li><a href="">Yapısal Kablolama</a></li>
               <li><a href="">IP Telefon Altyapı</a></li>
               <li><a href="">Çağrı Merkezi Altyapı</a></li>
@@ -29,8 +29,8 @@
             </ul>
           </div>
           <div class="drop-down drop-two">
-            <a href="#">İŞ ORTAKLARI</a>
-            <ul>
+            <a class="nav-drop  href="#">İŞ ORTAKLARI</a>
+            <ul class="drop-list">
               <li><a href="">Kablolu Kablosuz Ağ Çözümleri</a></li>
               <li><a href="">PBX & Çağrı Merkezi Çözümleri</a></li>
               <li><a href="">Yapısal Kablolama & Güvenlik Çözümleri</a></li>
@@ -38,15 +38,15 @@
             </ul>
           </div>
           <div class="drop-down drop-three">
-            <a href="#">KURUMSAL</a>
-            <ul>
+            <a class="nav-drop " href="#">KURUMSAL</a>
+            <ul class="drop-list">
               <li><a href="">Hakkımızda</a></li>
               <li><a href="">Misyon & Vizyon</a></li>
               <li><a href="">İnsan Kaynakları</a></li>
             </ul>
           </div>
-          <a href="">REFERANSLAR</a>
-          <a href="">İLETİŞİM</a>
+          <a class="nav-link-header" href="">REFERANSLAR</a>
+          <a class="nav-link-header" href="">İLETİŞİM</a>
         </div>
       </nav>
       <!-- navbar section end -->
@@ -55,9 +55,10 @@
       <main class="main-container">
         <!-- video section start -->
         <div class="video-section">
-          <video class="video" autoplay muted>
-            <source src="video/video.mp4" />
+          <video class="video-content" autoplay muted>
+            <source class="video" src="video/video.mp4" />
           </video>
+          <div class="video-filter"></div>
           <div class="video-text-container">
             <div class="telconet-text">
               <img src="image/slide-title-border-light.png" alt="" />
@@ -66,13 +67,14 @@
             </div>
             <h1>Teklonojiyi Bizimle Yakalayın</h1>
             <p>Hemen Keşfet</p>
-          </div>
 
-          <div class="topik-container">
-            <div class="topik-content">
-              <div class="topik-control"></div>
+            <div class="topik-container">
+              <div class="topik-content">
+                <div class="topik-control"></div>
+              </div>
             </div>
           </div>
+
         </div>
 
         <!-- video section end -->
@@ -355,5 +357,7 @@
 
       </footer>
     </div>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
