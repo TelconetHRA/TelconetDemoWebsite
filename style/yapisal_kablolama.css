@@ -98,6 +98,7 @@ ul.nav-list li a:hover {
 
 ul.nav-list li a:hover i[class*="fa-chevron"] {
   -webkit-animation: ul-arrow-animation 0.25s infinite alternate ease-in-out;
+          animation: ul-arrow-animation 0.25s infinite alternate ease-in-out;
 }
 
 ul.nav-list li > a.active {

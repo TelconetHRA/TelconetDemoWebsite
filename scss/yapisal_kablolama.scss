@@ -100,7 +100,7 @@ ul {
           text-decoration: none;
 
         i[class*="fa-chevron"]{
-          -webkit-animation: ul-arrow-animation 0.25s infinite alternate ease-in-out;
+          animation: ul-arrow-animation 0.25s infinite alternate ease-in-out;
         }}    
       }
 
