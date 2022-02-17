@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
 $Gray-bg-color: #212529; 
@@ -9,7 +9,7 @@ $body-bg-color: #FFF;
 $body-font-family: 'Montserrat', sans-serif;
 $dropDownBgColor:#1e1e1e;
 $dropDownHoverBg:rgb(40, 40, 40);
-
+$center-page-bg:rgb(238, 238, 238);
 
 @mixin flexible-column-center {
     display: flex;
@@ -48,4 +48,12 @@ $dropDownHoverBg:rgb(40, 40, 40);
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
+}
+@mixin flexible-row-wrap{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+
 }
