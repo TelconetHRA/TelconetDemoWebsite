@@ -11,9 +11,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+html .text-color-primary, html .text-primary {
+  color: #312783;
+}
+
 .homepage-container {
   width: 100%;
   /* main section  start*/
+  /* new page section end */
+  /* customer section start  */
 }
 
 .homepage-container .navbar-container {
@@ -139,9 +145,6 @@ body {
   /* sponsor section start */
   /* sponsor section end */
   /* new page section start */
-  /* new page section end */
-  /* customer section start  */
-  /* customer section end  */
 }
 
 .homepage-container .main-container .video-section {
@@ -395,8 +398,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: slideShow 5s infinite;
-          animation: slideShow 5s infinite;
 }
 
 .homepage-container .main-container .sponsor-page-container .sponsor-card-container .sponsor-card .card-img img {
@@ -404,38 +405,6 @@ body {
   height: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@-webkit-keyframes slideShow {
-  /* bu bölümde animasyon degleri ayarlanacak */
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(75%);
-            transform: translateX(75%);
-  }
-}
-
-@keyframes slideShow {
-  /* bu bölümde animasyon degleri ayarlanacak */
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(75%);
-            transform: translateX(75%);
-  }
 }
 
 .homepage-container .main-container .sponsor-page-container .sponsor-card-container .sponsor-card .card-text h3 {
@@ -516,89 +485,132 @@ body {
   color: #312783;
 }
 
-.homepage-container .main-container .customer-page-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 70vh;
+.homepage-container .customer-card {
+  margin-bottom: 20px;
 }
 
-.homepage-container .main-container .customer-page-container .customer-header-text {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-left: 10%;
-  width: 20%;
-  color: #312783;
+.homepage-container blockquote {
+  border-left: 5px solid #eee;
+  margin: 0 0 16px 0;
+  margin: 0 0 1rem 0;
+  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+  font-size: 1em;
 }
 
-.homepage-container .main-container .customer-page-container .customer-header-text h2 {
-  margin: 0;
-  font-weight: 800;
-}
-
-.homepage-container .main-container .customer-page-container .customer-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-  cursor: pointer;
-  border: 1px solid red;
-}
-
-.homepage-container .main-container .customer-page-container .customer-cards .customer-card-box {
-  -webkit-box-shadow: 0px 0px 0px 1px #c7c7c7;
-          box-shadow: 0px 0px 0px 1px #c7c7c7;
+.homepage-container .customer-card blockquote {
+  background: #CCC;
   border-radius: 5px;
-  padding: 40px;
-  margin: 10px;
+  border: 0;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 40px 64px 40px 72px;
+  padding: 2.5rem 4rem 2.5rem 4.5rem;
+  position: relative;
 }
 
-.homepage-container .main-container .customer-page-container .customer-cards .customer-card-box .customer-text {
-  color: #777;
-  font-size: 0.9rem;
+.homepage-container .customer-card blockquote:before {
+  left: 22px;
+  top: 21px;
+  color: #FFF;
+  content: "“";
+  font-size: 85px;
+  font-style: normal;
+  line-height: 1;
+  position: absolute;
 }
 
-.homepage-container .main-container .customer-page-container .customer-cards .customer-card-box .customer-profile-content {
+.homepage-container .customer-card blockquote p {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+
+.homepage-container .customer-card .customer-card-author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin: 12px 0 0 0;
+}
+
+.homepage-container .customer-card .customer-card-author img {
+  max-width: 25px;
+}
+
+.homepage-container .customer-card .customer-card-author strong {
+  color: #111;
+  display: block;
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.homepage-container .customer-card .customer-card-author span {
+  color: #666;
+  display: block;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.homepage-container .customer-card .customer-card-author p {
+  color: #999;
+  text-align: left;
+  line-height: 1.2;
+  margin-left: 9.6px;
+  margin-left: 0.6rem;
+}
+
+.homepage-container .customer-card.customer-card-style-4 {
+  border-radius: 6px;
+  padding: 8px;
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.homepage-container .customer-card.customer-card-style-4 blockquote {
+  background: transparent !important;
+  border-radius: 4px;
+  padding: 12px 30px;
+}
+
+.homepage-container .customer-card.customer-card-style-4 blockquote:before {
+  top: 5px;
+  left: 9px;
+  color: #777;
+  font-size: 35px;
+}
+
+.homepage-container .customer-card.customer-card-style-4 blockquote:after {
+  color: #777;
+  font-size: 35px;
+  bottom: -5px;
+}
+
+.homepage-container .customer-card.customer-card-style-4 blockquote p {
+  color: #777;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-style: normal;
+}
+
+.homepage-container .customer-card.customer-card-style-4 .customer-card-author {
+  margin-left: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
 }
 
-.homepage-container .main-container .customer-page-container .customer-cards .customer-card-box .customer-profile-content img {
-  width: 30%;
-  border-radius: 50%;
+.homepage-container .customer-card.customer-card-style-4 .customer-card-author img {
+  max-width: 55px;
 }
 
-.homepage-container .main-container .customer-page-container .customer-cards .customer-card-box .customer-profile-content .customer-name {
-  font-weight: 700;
+.homepage-container .customer-card.customer-card-style-4 .customer-card-author p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
