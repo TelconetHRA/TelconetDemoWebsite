@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,gGAAI",
+    "mappings": "ACAA,OAAO,CAAC,4GAAI",
     "sources": [
         "../scss/lan_wan_alt_yapi.scss",
         "../scss/_variables.scss"

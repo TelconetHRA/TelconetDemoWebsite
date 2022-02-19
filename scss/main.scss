@@ -97,15 +97,19 @@ body {
   .main-container {
     .video-section {
       position: relative;
+      width: 100%;
+      height: 100vh;
       .video-content {
         position: relative;
         width: 100%;
+        height: 100vh;
+        object-fit: cover;
       }
 
       .video-filter {
         position: absolute;
         width: 100%;
-        height: 114vh;
+        height: 100vh;
         top: 0;
         background-color: rgb(30, 30, 31);
         opacity: 0.7;
@@ -114,7 +118,6 @@ body {
 
       .video-text-container {
         @include flexible-column-center;
-
         position: absolute;
         width: 100%;
         height: 114vh;
@@ -131,20 +134,20 @@ body {
           position: absolute;
           width: 100px;
           height: 100px;
-          bottom: 100px;
+          bottom: 150px;
 
           .topik-content {
             @include flexible-column-center;
             border: 1px solid white;
             position: relative;
-            width: 40px;
-            height: 60px;
+            width: 25px;
+            height: 40px;
             border-radius: 20px;
             .topik-control {
               position: absolute;
               border: 1px solid white;
-              width: 10px;
-              height: 20px;
+              width: 5px;
+              height: 10px;
               border-radius: 20px;
               top: 5px;
               animation: mouseMovie 2s infinite;
@@ -169,10 +172,330 @@ body {
     }
 
     /* Center page start */
-    .center-page{
-      border: 1px solid black;
-     
+    .center-page {
+      .center-page-box {
+        @include flexible-row-center;
+        background-color: $center-page-bg;
+        .center-page-text {
+          width: 50%;
+          padding: 20px;
+        }
+        .center-page-img {
+          width: 50%;
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
     /* Center page end */
+
+    /* sponsor section start */
+
+    .sponsor-page-container {
+      @include flexible-column-center;
+      background-color: white;
+      .sponsor-header {
+        align-self: flex-start;
+        width: 20%;
+        margin-left: 10%;
+        padding: 10px;
+        color: $Purple-color;
+        h1 {
+          font-weight: 700;
+          margin: 0;
+        }
+      }
+      .sponsor-card-container {
+        @include flexible-row-center;
+        width: 80%;
+        height: 90vh;
+        .sponsor-card {
+          border-radius: 10px;
+          max-width: 20%;
+          height: 55vh;
+          text-align: center;
+          border-bottom: 4px solid $Purple-color;
+          box-shadow: 0px 0px 10px 1px rgb(216, 216, 216);
+          margin: 10px;
+          position: relative;
+          overflow: hidden;
+          .card-img {
+            @include flexible-row-center;
+            img {
+              width: 100%;
+              height: 25vh;
+              object-fit: cover;
+            }
+          }
+          .card-text {
+            h3 {
+              font-weight: 700;
+              color: $Purple-color;
+            }
+            p {
+              font-size: small;
+              color: $White-color;
+            }
+            a {
+              font-weight: 700;
+            }
+          }
+        }
+
+        /* Animation Section */
+        .card-one {
+          .card-img {
+            animation: cardOne 4s linear infinite;
+          }
+          /* @keyframes cardOne {
+            10%{
+              left: 50px;
+            }
+            100%{
+              left: 300px;
+          } */
+        }
+      }
+    }
+    /* sponsor section end */
+
+    /* new page section start */
+
+    .news-page-container {
+      background-color: $center-page-bg;
+      .news-header-text {
+        padding: 10px;
+        width: 20%;
+        margin-left: 10%;
+        color: $Purple-color;
+
+        h2 {
+          margin: 0;
+          font-weight: 800;
+        }
+      }
+
+      .news-card-container {
+        @include flexible-row-center;
+
+        .new-card {
+          @include flexible-column-space-around;
+          width: 25%;
+          height: 75vh;
+          margin: 20px;
+          text-align: start;
+          color: $White-color;
+          .news-card-img {
+            img {
+              width: 100%;
+            }
+          }
+          .news-card-text {
+            height: 50%;
+            h3 {
+              color: $Purple-color;
+            }
+          }
+        }
+      }
+    }
+
+    /* new page section end */
+
+    /* customer section start  */
+
+    .customer-page-container {
+      @include flexible-column-space-around;
+
+      height: 70vh;
+      .customer-header-text {
+        align-self: flex-start;
+        margin-left: 10%;
+        width: 20%;
+        color: $Purple-color;
+        h2 {
+          margin: 0;
+          font-weight: 800;
+        }
+      }
+      .customer-cards {
+        @include flexible-row-center;
+        width: 80%;
+        cursor: pointer;
+        overflow: hidden;
+        .customer-card-box {
+          box-shadow: 0px 0px 0px 1px rgb(199, 199, 199);
+          border-radius: 5px;
+          padding: 40px;
+          margin: 10px;
+
+          .customer-text {
+            color: $White-color;
+            font-size: 0.9rem;
+          }
+          .customer-profile-content {
+            @include flexible-row-space-around;
+            width: 30%;
+            img {
+              width: 30%;
+              border-radius: 50%;
+            }
+            .customer-name {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    /* customer section end  */
   }
+
+  /* footer section start */
+  .footer-container {
+    @include flexible-column-center;
+    background-color: $footer-bg-color;
+    /* information section start*/
+    .information-section {
+      @include flexible-row-space-around;
+      padding: 20px;
+      .footer-logo {
+        @include flexible-column-center;
+        width: 20%;
+        height: 40vh;
+        img {
+          width: 70%;
+        }
+      }
+      .about {
+        width: 20%;
+        height: 40vh;
+        color: white;
+        p {
+          font-size: 0.8rem;
+          line-height: 1.4rem;
+        }
+        a {
+          font-size: 2rem;
+          color: $White-color;
+        }
+      }
+      .links {
+        width: 20%;
+        height: 40vh;
+        h2 {
+          color: white;
+        }
+        ul {
+          list-style-type: none;
+          color: rgb(140, 140, 140);
+          padding: 0;
+          li {
+            a {
+              color: rgb(140, 140, 140);
+              text-decoration: none;
+              font-size: 0.8rem;
+              line-height: 1.4rem;
+              margin-left: 4px;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+      .contact {
+        width: 20%;
+        height: 40vh;
+        h2 {
+          color: white;
+        }
+        h4 {
+          margin: 0;
+          color: rgb(140, 140, 140);
+        }
+        p {
+          color: white;
+          font-size: 0.8rem;
+          line-height: 1.4rem;
+        }
+        a {
+          color: white;
+          font-size: 0.8rem;
+          line-height: 1.4rem;
+          text-decoration: none;
+        }
+      }
+    }
+    /* information section end*/
+
+    /* footer sponsor section start*/
+    .footer-sponsor-container {
+      @include flexible-row-space-around;
+      border-bottom: 1px solid rgb(99, 99, 99);
+      align-self: center;
+      width: 77%;
+      height: 35vh;
+      overflow: hidden; /* bu bölümde animasyon yapılacak muhtemel js kullanılcak */
+      a {
+        img {
+          width: 12vw;
+          border-radius: 7px;
+          margin: 5px;
+        }
+      }
+    }
+
+    .down-footer {
+      @include flexible-row-space;
+      width: 80%;
+      padding: 5px;
+      a {
+        width: 15%;
+        height: 10vh;
+        img {
+          width: 100%;
+        }
+      }
+      .copyright {
+        small {
+          color: rgb(99, 99, 99);
+        }
+      }
+      .made-by {
+        color: rgb(140, 140, 140);
+        width: 22%;
+        p {
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          i {
+            animation: iconsize 1s linear infinite;
+            color: red;
+          }
+          @keyframes iconsize {
+            /* burayı hallet */
+            0% {
+              font-size: large;
+            }
+            50% {
+              font-size: medium;
+            }
+          }
+
+          a {
+            color: rgb(140, 140, 140);
+            text-decoration: none;
+            font-size: 0.8rem;
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    /* footer sponsor section end*/
+  }
+  /* footer section end */
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 @-webkit-keyframes ul-arrow-animation {
   0% {
@@ -360,4 +361,7 @@ ul.nav-pills > li > a.active:hover, ul.nav-pills > li > a.active:focus {
 .breadcrumbs i {
   color: #fff;
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+>>>>>>> 3050e941dfe9d1f6da2d1eab47eee5f6c9b46ca7
 /*# sourceMappingURL=kablolu_kablosuz_ag_cozumleri.css.map */
