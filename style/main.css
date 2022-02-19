@@ -18,8 +18,13 @@ html .text-color-primary, html .text-primary {
 .homepage-container {
   width: 100%;
   /* main section  start*/
+
   /* new page section end */
   /* customer section start  */
+
+  /* footer section start */
+  /* footer section end */
+
 }
 
 .homepage-container .navbar-container {
@@ -369,6 +374,7 @@ html .text-color-primary, html .text-primary {
           align-items: center;
   width: 80%;
   height: 90vh;
+  /* Animation Section */
 }
 
 .homepage-container .main-container .sponsor-page-container .sponsor-card-container .sponsor-card {
@@ -419,6 +425,21 @@ html .text-color-primary, html .text-primary {
 
 .homepage-container .main-container .sponsor-page-container .sponsor-card-container .sponsor-card .card-text a {
   font-weight: 700;
+}
+
+.homepage-container .main-container .sponsor-page-container .sponsor-card-container .card-one {
+  /* @keyframes cardOne {
+            10%{
+              left: 50px;
+            }
+            100%{
+              left: 300px;
+          } */
+}
+
+.homepage-container .main-container .sponsor-page-container .sponsor-card-container .card-one .card-img {
+  -webkit-animation: cardOne 4s linear infinite;
+          animation: cardOne 4s linear infinite;
 }
 
 .homepage-container .main-container .news-page-container {
@@ -532,6 +553,21 @@ html .text-color-primary, html .text-primary {
   display: -ms-flexbox;
   display: flex;
   margin: 12px 0 0 0;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  cursor: pointer;
+  overflow: hidden;
+
 }
 
 .homepage-container .customer-card .customer-card-author img {
@@ -612,5 +648,243 @@ html .text-color-primary, html .text-primary {
 
 .homepage-container .customer-card.customer-card-style-4 .customer-card-author p {
   margin-bottom: 0;
+}
+
+.homepage-container .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+  /* information section start*/
+  /* information section end*/
+  /* footer sponsor section start*/
+  /* footer sponsor section end*/
+}
+
+.homepage-container .footer-container .information-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.homepage-container .footer-container .information-section .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 40vh;
+}
+
+.homepage-container .footer-container .information-section .footer-logo img {
+  width: 70%;
+}
+
+.homepage-container .footer-container .information-section .about {
+  width: 20%;
+  height: 40vh;
+  color: white;
+}
+
+.homepage-container .footer-container .information-section .about p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+.homepage-container .footer-container .information-section .about a {
+  font-size: 2rem;
+  color: #777;
+}
+
+.homepage-container .footer-container .information-section .links {
+  width: 20%;
+  height: 40vh;
+}
+
+.homepage-container .footer-container .information-section .links h2 {
+  color: white;
+}
+
+.homepage-container .footer-container .information-section .links ul {
+  list-style-type: none;
+  color: #8c8c8c;
+  padding: 0;
+}
+
+.homepage-container .footer-container .information-section .links ul li a {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin-left: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.homepage-container .footer-container .information-section .links ul li a:hover {
+  margin-left: 8px;
+}
+
+.homepage-container .footer-container .information-section .contact {
+  width: 20%;
+  height: 40vh;
+}
+
+.homepage-container .footer-container .information-section .contact h2 {
+  color: white;
+}
+
+.homepage-container .footer-container .information-section .contact h4 {
+  margin: 0;
+  color: #8c8c8c;
+}
+
+.homepage-container .footer-container .information-section .contact p {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+.homepage-container .footer-container .information-section .contact a {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  text-decoration: none;
+}
+
+.homepage-container .footer-container .footer-sponsor-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #636363;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 77%;
+  height: 35vh;
+  overflow: hidden;
+  /* bu bölümde animasyon yapılacak muhtemel js kullanılcak */
+}
+
+.homepage-container .footer-container .footer-sponsor-container a img {
+  width: 12vw;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.homepage-container .footer-container .down-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  padding: 5px;
+}
+
+.homepage-container .footer-container .down-footer a {
+  width: 15%;
+  height: 10vh;
+}
+
+.homepage-container .footer-container .down-footer a img {
+  width: 100%;
+}
+
+.homepage-container .footer-container .down-footer .copyright small {
+  color: #636363;
+}
+
+.homepage-container .footer-container .down-footer .made-by {
+  color: #8c8c8c;
+  width: 22%;
+}
+
+.homepage-container .footer-container .down-footer .made-by p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.homepage-container .footer-container .down-footer .made-by p i {
+  -webkit-animation: iconsize 1s linear infinite;
+          animation: iconsize 1s linear infinite;
+  color: red;
+}
+
+@-webkit-keyframes iconsize {
+  /* burayı hallet */
+  0% {
+    font-size: large;
+  }
+  50% {
+    font-size: medium;
+  }
+}
+
+@keyframes iconsize {
+  /* burayı hallet */
+  0% {
+    font-size: large;
+  }
+  50% {
+    font-size: medium;
+  }
+}
+
+.homepage-container .footer-container .down-footer .made-by p a {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-size: 0.8rem;
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */

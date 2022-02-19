@@ -1,6 +1,5 @@
 const navBar = document.querySelector('.navbar-container')
 
-
 window.onscroll = function () {
     scrollFunc()
 }
