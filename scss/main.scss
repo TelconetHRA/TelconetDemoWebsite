@@ -439,7 +439,7 @@ html {
     
           p {
             margin-bottom: 0;
-
+          }
     .customer-page-container {
       @include flexible-column-space-around;
 
@@ -486,6 +486,8 @@ html {
     }
 
   }
+}
+}
 
 
     /* customer section end  */
@@ -638,7 +640,9 @@ html {
     /* footer sponsor section end*/
   }
   /* footer section end */
-}
+
+
+
 
 
 /* media query start */
