@@ -9,7 +9,14 @@ body {
   font-family: $body-font-family;
 }
 
+html {
+  .text-color-primary, .text-primary {
+    color:$Purple-color;
+  }
+}
+
 .homepage-container {
+
   width: 100%;
   .navbar-container {
     @include flexible-row-space-around;
@@ -229,6 +236,8 @@ body {
               object-fit: cover;
             }
           }
+
+
           .card-text {
             h3 {
               font-weight: 700;
@@ -301,10 +310,135 @@ body {
         }
       }
     }
+  }
+
 
     /* new page section end */
 
     /* customer section start  */
+
+    .customer-card {
+      margin-bottom: 20px;
+    }
+    
+    blockquote {
+      border-left: 5px solid #eee;
+      margin: 0 0 16px 0;
+      margin: 0 0 1rem 0;
+      padding: 8px 16px;
+      padding: 0.5rem 1rem;
+      font-size: 1em;
+    }
+    
+    .customer-card {
+      blockquote {
+        background: #CCC;
+        border-radius: 5px;
+        border: 0;
+        color: #666;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 40px 64px 40px 72px;
+        padding: 2.5rem 4rem 2.5rem 4.5rem;
+        position: relative;
+    
+        &:before {
+          left: 22px;
+          top: 21px;
+          color: #FFF;
+          content: "“";
+          font-size: 85px;
+          font-style: normal;
+          line-height: 1;
+          position: absolute;
+        }
+    
+        p {
+          color: #FFF;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.2em;
+        }
+      }
+    
+    
+      .customer-card-author {
+        display: flex;
+        margin: 12px 0 0 0;
+
+        img {
+          max-width: 25px;
+        }
+    
+        strong {
+          color: #111;
+          display: block;
+          margin-bottom: 2px;
+          font-size: 16px;
+          font-size: 1rem;
+        }
+    
+        span {
+          color: #666;
+          display: block;
+          font-size: 12.8px;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+    
+        p {
+          color: #999;
+          text-align: left;
+          line-height: 1.2;
+          margin-left: 9.6px;
+          margin-left: 0.6rem;
+        }
+      }
+    
+      &.customer-card-style-4 {
+        border-radius: 6px;
+        padding: 8px;
+        border-top: 1px solid #DFDFDF;
+        border-bottom: 1px solid #DFDFDF;
+        border-left: 1px solid #ECECEC;
+        border-right: 1px solid #ECECEC;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+    
+        blockquote {
+          background: transparent !important;
+          border-radius: 4px;
+          padding: 12px 30px;
+    
+          &:before {
+            top: 5px;
+            left: 9px;
+            color: #777;
+            font-size: 35px;
+          }
+    
+          &:after {
+            color: #777;
+            font-size: 35px;
+            bottom: -5px;
+          }
+    
+          p {
+            color: #777;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            font-style: normal;
+          }
+        }
+    
+        .customer-card-author {
+          margin-left: 30px;
+          align-items: center;
+    
+          img {
+            max-width: 55px;
+          }
+    
+          p {
+            margin-bottom: 0;
 
     .customer-page-container {
       @include flexible-column-space-around;
@@ -345,10 +479,14 @@ body {
             .customer-name {
               font-weight: 700;
             }
+
           }
         }
       }
     }
+
+  }
+
 
     /* customer section end  */
   }
@@ -502,6 +640,7 @@ body {
   /* footer section end */
 }
 
+
 /* media query start */
 
 /* mobile max-width 480px */
@@ -563,3 +702,4 @@ body {
 }
 
 /* media query end */
+
