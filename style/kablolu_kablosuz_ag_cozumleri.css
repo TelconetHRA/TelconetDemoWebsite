@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 @-webkit-keyframes ul-arrow-animation {
   0% {
     -webkit-transform: translateX(0);
@@ -361,7 +361,244 @@ ul.nav-pills > li > a.active:hover, ul.nav-pills > li > a.active:focus {
 .breadcrumbs i {
   color: #fff;
 }
-=======
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
->>>>>>> 3050e941dfe9d1f6da2d1eab47eee5f6c9b46ca7
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+  /* information section start*/
+  /* information section end*/
+  /* footer sponsor section start*/
+  /* footer sponsor section end*/
+}
+
+.footer-container .information-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.footer-container .information-section .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 40vh;
+}
+
+.footer-container .information-section .footer-logo img {
+  width: 70%;
+}
+
+.footer-container .information-section .about {
+  width: 20%;
+  height: 40vh;
+  color: white;
+}
+
+.footer-container .information-section .about p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+.footer-container .information-section .about a {
+  font-size: 2rem;
+  color: #777;
+}
+
+.footer-container .information-section .links {
+  width: 20%;
+  height: 40vh;
+}
+
+.footer-container .information-section .links h2 {
+  color: white;
+}
+
+.footer-container .information-section .links ul {
+  list-style-type: none;
+  color: #8c8c8c;
+  padding: 0;
+}
+
+.footer-container .information-section .links ul li a {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin-left: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-container .information-section .links ul li a:hover {
+  margin-left: 8px;
+}
+
+.footer-container .information-section .contact {
+  width: 20%;
+  height: 40vh;
+}
+
+.footer-container .information-section .contact h2 {
+  color: white;
+}
+
+.footer-container .information-section .contact h4 {
+  margin: 0;
+  color: #8c8c8c;
+}
+
+.footer-container .information-section .contact p {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+}
+
+.footer-container .information-section .contact a {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  text-decoration: none;
+}
+
+.footer-container .footer-sponsor-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #636363;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 77%;
+  height: 35vh;
+  overflow: hidden;
+  /* bu bölümde animasyon yapılacak muhtemel js kullanılcak */
+}
+
+.footer-container .footer-sponsor-container a img {
+  width: 12vw;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.footer-container .down-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  padding: 5px;
+}
+
+.footer-container .down-footer a {
+  width: 15%;
+  height: 10vh;
+}
+
+.footer-container .down-footer a img {
+  width: 100%;
+}
+
+.footer-container .down-footer .copyright small {
+  color: #636363;
+}
+
+.footer-container .down-footer .made-by {
+  color: #8c8c8c;
+  width: 22%;
+}
+
+.footer-container .down-footer .made-by p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.footer-container .down-footer .made-by p i {
+  -webkit-animation: iconsize 1s linear infinite;
+          animation: iconsize 1s linear infinite;
+  color: red;
+}
+
+@-webkit-keyframes iconsize {
+  /* burayı hallet */
+  0% {
+    font-size: large;
+  }
+  50% {
+    font-size: medium;
+  }
+}
+
+@keyframes iconsize {
+  /* burayı hallet */
+  0% {
+    font-size: large;
+  }
+  50% {
+    font-size: medium;
+  }
+}
+
+.footer-container .down-footer .made-by p a {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-size: 0.8rem;
+  width: 50%;
+}
+
+/* footer section end */
 /*# sourceMappingURL=kablolu_kablosuz_ag_cozumleri.css.map */

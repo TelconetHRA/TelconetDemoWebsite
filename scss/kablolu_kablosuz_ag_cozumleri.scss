@@ -356,3 +356,150 @@ ul {
     color: #fff;
   }
 }
+
+.footer-container {
+  @include flexible-column-center;
+  background-color: $footer-bg-color;
+  /* information section start*/
+  .information-section {
+    @include flexible-row-space-around;
+    padding: 20px;
+    .footer-logo {
+      @include flexible-column-center;
+      width: 20%;
+      height: 40vh;
+      img {
+        width: 70%;
+      }
+    }
+    .about {
+      width: 20%;
+      height: 40vh;
+      color: white;
+      p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+      }
+      a {
+        font-size: 2rem;
+        color: $White-color;
+      }
+    }
+    .links {
+      width: 20%;
+      height: 40vh;
+      h2 {
+        color: white;
+      }
+      ul {
+        list-style-type: none;
+        color: rgb(140, 140, 140);
+        padding: 0;
+        li {
+          a {
+            color: rgb(140, 140, 140);
+            text-decoration: none;
+            font-size: 0.8rem;
+            line-height: 1.4rem;
+            margin-left: 4px;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      width: 20%;
+      height: 40vh;
+      h2 {
+        color: white;
+      }
+      h4 {
+        margin: 0;
+        color: rgb(140, 140, 140);
+      }
+      p {
+        color: white;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+      }
+      a {
+        color: white;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        text-decoration: none;
+      }
+    }
+  }
+  /* information section end*/
+
+  /* footer sponsor section start*/
+  .footer-sponsor-container {
+    @include flexible-row-space-around;
+    border-bottom: 1px solid rgb(99, 99, 99);
+    align-self: center;
+    width: 77%;
+    height: 35vh;
+    overflow: hidden; /* bu bölümde animasyon yapılacak muhtemel js kullanılcak */
+    a {
+      img {
+        width: 12vw;
+        border-radius: 7px;
+        margin: 5px;
+      }
+    }
+  }
+
+  .down-footer {
+    @include flexible-row-space;
+    width: 80%;
+    padding: 5px;
+    a {
+      width: 15%;
+      height: 10vh;
+      img {
+        width: 100%;
+      }
+    }
+    .copyright {
+      small {
+        color: rgb(99, 99, 99);
+      }
+    }
+    .made-by {
+      color: rgb(140, 140, 140);
+      width: 22%;
+      p {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        i {
+          animation: iconsize 1s linear infinite;
+          color: red;
+        }
+        @keyframes iconsize {
+          /* burayı hallet */
+          0% {
+            font-size: large;
+          }
+          50% {
+            font-size: medium;
+          }
+        }
+
+        a {
+          color: rgb(140, 140, 140);
+          text-decoration: none;
+          font-size: 0.8rem;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  /* footer sponsor section end*/
+}
+/* footer section end */
+
