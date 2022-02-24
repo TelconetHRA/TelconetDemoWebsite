@@ -1,5 +1,9 @@
 @import "_variables";
 
+*{
+  box-sizing: border-box;
+}
+
 @keyframes ul-arrow-animation {
   0% {
     -webkit-transform: translateX(0);
@@ -27,6 +31,8 @@ body {
 }
 h1,h2,h3,h4,h5{
   color: #212529;
+  letter-spacing: -0.05em;
+  -webkit-font-smoothing: antialiased;
 }
 h1 {
 	font-size: 2.6em;
@@ -61,7 +67,6 @@ h5 {
 }
 
 h6 {
-	color: #333;
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 18px;
@@ -191,6 +196,7 @@ aside {
 
 
 .page-header {
+  background-color: #212529;
   margin: 0 0 35px 0;
   padding: 30px 0;
   position: relative;
@@ -270,82 +276,8 @@ ul {
         border-bottom: 0;
       }
     }
-
-    &.hide-not-active li {
-      ul {
-        display: none;
-      }
-
-      &.active ul {
-        display: block;
-      }
-    }
-
-    &.show-bg-active {
-
-      .active>a,
-      a.active {
-        background-color: #f5f5f5;
-      }
-
-      .active>a:hover,
-      a.active:hover {
-        background-color: #eee;
-      }
-    }
-
-    &.no-arrows li a:before {
-      content: none;
-    }
   }
-
-  &.nav-list-simple li {
-    margin: 0;
-    padding: 0;
-    display: block;
-    position: relative;
-
-    a {
-      transition: 0.1s;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-      padding: 8px 0;
-      display: block;
-      color: #666;
-      font-size: 0.9em;
-      text-decoration: none;
-      line-height: 20px;
-      transition: ease padding 300ms;
-    }
-
-    >a.active {
-      font-weight: bold;
-    }
-
-    &:hover a {
-      padding-left: 4px;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0 0 0 25px;
-      padding: 0;
-    }
-  }
-
-  &.narrow li a {
-    padding: 4px 0;
-  }
-
-  &.nav-pills>li>a.active {
-    color: #FFF;
-    background-color: #CCC;
-
-    &:hover,
-    &:focus {
-      color: #FFF;
-      background-color: #CCC;
-    }
-  }
+   
 }
 
 /*--------  PageHeader-Background -------- */

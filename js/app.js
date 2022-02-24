@@ -38,6 +38,7 @@ owl.owlCarousel({
     loop: true,
     dots: false,
     margin: 10,
+    lazyLoad: true,
     autoplay: true,
     autoplayTimeout: 1000,
     autoplayHoverPause: true,
