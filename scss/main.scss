@@ -603,35 +603,7 @@ html {
         color: rgb(99, 99, 99);
       }
     }
-    .made-by {
-      color: rgb(140, 140, 140);
-      width: 22%;
-      p {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        i {
-          animation: iconsize 1s linear infinite;
-          color: red;
-        }
-        @keyframes iconsize {
-          /* burayı hallet */
-          0% {
-            font-size: large;
-          }
-          50% {
-            font-size: medium;
-          }
-        }
-
-        a {
-          color: rgb(140, 140, 140);
-          text-decoration: none;
-          font-size: 0.8rem;
-          width: 50%;
-        }
-      }
-    }
+   
   }
 
   /* footer sponsor section end*/
@@ -863,11 +835,7 @@ html {
       .copyright {
         margin-top: 10px;
       }
-      .made-by {
-        margin-top: 10px;
-        text-align: center;
-        width: 50%;
-      }
+    
     }
   }
   /* footer seciton end */
