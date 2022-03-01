@@ -12,7 +12,8 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-html .text-color-primary, html .text-primary {
+html .text-color-primary,
+html .text-primary {
   color: #312783;
 }
 
@@ -91,6 +92,10 @@ html .text-color-primary, html .text-primary {
 
 .homepage-container .navbar-container .nav-content-right .drop-down {
   padding: 10px;
+}
+
+.homepage-container .navbar-container .nav-content-right .drop-down .media-drop i {
+  display: none;
 }
 
 .homepage-container .navbar-container .nav-content-right .drop-down .drop-list {
@@ -376,7 +381,7 @@ html .text-color-primary, html .text-primary {
 
 .homepage-container .main-container .sponsor-page-container .sponsor-card-container .sponsor-card {
   border-radius: 10px;
-  max-width: 20%;
+  width: 20%;
   height: 55vh;
   text-align: center;
   border-bottom: 4px solid #312783;
@@ -517,11 +522,11 @@ html .text-color-primary, html .text-primary {
 }
 
 .homepage-container .customer-card blockquote {
-  background: #CCC;
+  background: #ccc;
   border-radius: 5px;
   border: 0;
   color: #666;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 40px 64px 40px 72px;
   padding: 2.5rem 4rem 2.5rem 4.5rem;
@@ -531,7 +536,7 @@ html .text-color-primary, html .text-primary {
 .homepage-container .customer-card blockquote:before {
   left: 22px;
   top: 21px;
-  color: #FFF;
+  color: #fff;
   content: "“";
   font-size: 85px;
   font-style: normal;
@@ -540,8 +545,8 @@ html .text-color-primary, html .text-primary {
 }
 
 .homepage-container .customer-card blockquote p {
-  color: #FFF;
-  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
 }
 
@@ -583,10 +588,10 @@ html .text-color-primary, html .text-primary {
 .homepage-container .customer-card.customer-card-style-4 {
   border-radius: 6px;
   padding: 8px;
-  border-top: 1px solid #DFDFDF;
-  border-bottom: 1px solid #DFDFDF;
-  border-left: 1px solid #ECECEC;
-  border-right: 1px solid #ECECEC;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
 }
@@ -612,7 +617,7 @@ html .text-color-primary, html .text-primary {
 
 .homepage-container .customer-card.customer-card-style-4 blockquote p {
   color: #777;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-style: normal;
 }
@@ -959,7 +964,7 @@ html .text-color-primary, html .text-primary {
 /* footer section end */
 /* media query start */
 /* mobile max-width 480px */
-@media (max-width: 480px) {
+@media (max-width: 981px) {
   .navbar-container {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -968,7 +973,6 @@ html .text-color-primary, html .text-primary {
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
     padding: 10px !important;
-    border: 1px solid red;
   }
   .navbar-container .media-nav-icon {
     display: -webkit-box !important;
@@ -983,45 +987,243 @@ html .text-color-primary, html .text-primary {
     width: 40px;
     height: 40px;
     background-color: #312783;
+    border: 1px solid red;
   }
   .navbar-container .media-nav-icon i {
     color: white;
     font-size: x-large;
   }
   .navbar-container .nav-content-right {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    /* display: block !important;  burada bir sorun var sonra dön */
     background: #212529;
     position: absolute;
     top: 100px;
     width: 95% !important;
     padding: 20px;
+    border: 1px solid red;
   }
   .navbar-container .nav-content-right .nav-link-header {
-    margin-left: 5px;
+    display: inline-block;
+    /* margin-left: 5px; */
     border-bottom: 1px solid #777;
-    width: 90%;
+    width: 90% !important;
   }
   .navbar-container .nav-content-right .nav-link-header:last-child {
     border-bottom: none;
   }
   .navbar-container .nav-content-right .drop-down {
-    margin-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* margin-left: 5px; */
     border-bottom: 1px solid #777;
     width: 90%;
+    /* .nav-drop{
+
+        } */
   }
-  .navbar-container .nav-content-right .drop-down .nav-drop .drop-list {
-    position: static !important;
-    border: 1px solid !important;
+  .navbar-container .nav-content-right .drop-down .media-drop {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .footer-container {
-    display: none !important;
+  .navbar-container .nav-content-right .drop-down .media-drop i {
+    display: block !important;
+    color: #777;
   }
+  .navbar-container .nav-content-right .drop-down .drop-list {
+    position: relative !important;
+    width: 100%;
+  }
+  .navbar-container .nav-content-right .drop-down .drop-list li {
+    background: none !important;
+  }
+  .navbar-container .nav-content-right .drop-down .drop-list li:active {
+    background-color: #282828 !important;
+  }
+  /* main section start */
+  .main-container {
+    /* customer card bölümünü ayarla ve aykuta neden ayrı ayrı iki customer card author olduğunu sor */
+  }
+  .main-container .video-section .video-text-container {
+    text-align: center;
+  }
+  .main-container .center-page .center-page-box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .main-container .center-page .center-page-box .center-page-text {
+    width: 100% !important;
+  }
+  .main-container .center-page .center-page-box .center-page-text h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #777;
+  }
+  .main-container .center-page .center-page-box .center-page-text p {
+    font-size: 1rem;
+    color: #777;
+  }
+  .main-container .center-page .center-page-box .center-page-img {
+    width: 100% !important;
+  }
+  .main-container .center-page .center-page-box .center-page-img img {
+    width: 100% !important;
+  }
+  .main-container .center-page .page-box-one {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .main-container .center-page .page-box-three {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .main-container .sponsor-page-container .sponsor-header {
+    width: 100% !important;
+    margin-left: 0% !important;
+    margin-top: 40px;
+  }
+  .main-container .sponsor-page-container .sponsor-header h1 {
+    font-size: 1.5rem;
+  }
+  .main-container .sponsor-page-container .sponsor-card-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .main-container .sponsor-page-container .sponsor-card-container .sponsor-card {
+    width: 44% !important;
+    height: 45vh !important;
+    margin-top: 50px !important;
+  }
+  .main-container .sponsor-page-container .sponsor-card-container .card-text h3 {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  .main-container .news-page-container .news-header-text {
+    width: 100% !important;
+    margin-left: 0px !important;
+    padding-top: 40px !important;
+  }
+  .main-container .news-page-container .news-header-text h2 {
+    font-size: 1.5rem;
+  }
+  .main-container .news-page-container .news-card-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .main-container .news-page-container .news-card-container .new-card {
+    width: 100% !important;
+  }
+  .main-container .news-page-container .news-card-container .new-card .news-card-text {
+    text-align: center;
+    padding: 20px;
+  }
+  /* main section start */
+  /* footer seciton start */
+  .footer-container .information-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container .information-section .footer-logo {
+    width: 100%;
+    height: 20vh;
+  }
+  .footer-container .information-section .footer-logo img {
+    width: 40%;
+  }
+  .footer-container .information-section .about {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .footer-container .information-section .about h2 {
+    font-size: 1.2rem;
+  }
+  .footer-container .information-section .links {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .footer-container .information-section .links h2 {
+    font-size: 1.2rem;
+  }
+  .footer-container .information-section .contact {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .footer-container .information-section .contact h2 {
+    font-size: 1.2rem;
+  }
+  .footer-container .information-section .contact h4 {
+    font-size: 1rem;
+  }
+  .footer-container .footer-sponsor-container {
+    border: 1px solid red;
+    width: 80%;
+    height: auto;
+  }
+  .footer-container .footer-sponsor-container a img {
+    width: 40%;
+    border: 1px solid red;
+  }
+  .footer-container .down-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .footer-container .down-footer a {
+    width: 40%;
+  }
+  .footer-container .down-footer .copyright {
+    margin-top: 10px;
+  }
+  .footer-container .down-footer .made-by {
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+  }
+  /* footer seciton end */
 }
 
 /* media query end */

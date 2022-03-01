@@ -1,4 +1,6 @@
 const navBar = document.querySelector('.navbar-container')
+const mediaIcon = document.querySelector('.media-nav-icon')
+const navContentRight = document.querySelector('.nav-content-right')
 
 window.onscroll = function () {
     scrollFunc()
@@ -32,7 +34,7 @@ $('#customer-carousel').owlCarousel({
     }
 })
 
-var owl = $('#footer-carousel');
+let owl = $('#footer-carousel');
 owl.owlCarousel({
     items: 8,
     loop: true,
@@ -57,3 +59,15 @@ owl.owlCarousel({
         }
     }
 });
+
+
+
+mediaIcon.addEventListener('click', () => {
+    if(navContentRight.style.display === "none"){
+        navContentRight.style.display = 'block'
+        console.log("ifte");
+    }else{
+        navContentRight.style.display = 'none'
+        console.log("elsede");
+    }
+})
