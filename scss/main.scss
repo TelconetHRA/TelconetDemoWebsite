@@ -34,6 +34,7 @@ html {
         height: 6vh;
       }
     }
+    
     .nav-content-right {
       @include flexible-row-center;
       width: 50%;
@@ -214,6 +215,7 @@ html {
         width: 20%;
         margin-left: 10%;
         padding: 10px;
+        margin-top: 50px;
         color: $Purple-color;
         h1 {
           font-weight: 700;
@@ -226,7 +228,7 @@ html {
         height: 90vh;
         .sponsor-card {
           border-radius: 10px;
-          width: 20%;
+          width: 30%;
           height: 55vh;
           text-align: center;
           border-bottom: 4px solid $Purple-color;
@@ -245,6 +247,7 @@ html {
 
           .card-text {
             h3 {
+              font-size: 1.2rem;
               font-weight: 700;
               color: $Purple-color;
             }
@@ -279,6 +282,7 @@ html {
 
     .news-page-container {
       background-color: $center-page-bg;
+      padding: 2%;
       .news-header-text {
         padding: 10px;
         width: 20%;
@@ -555,6 +559,7 @@ html {
       }
       h4 {
         margin: 0;
+        font-size: 1rem;
         color: rgb(140, 140, 140);
       }
       p {
@@ -603,7 +608,6 @@ html {
         color: rgb(99, 99, 99);
       }
     }
-   
   }
 
   /* footer sponsor section end*/
@@ -611,8 +615,6 @@ html {
 /* footer section end */
 
 /* media query start */
-
-/* mobile max-width 480px */
 
 @media (max-width: 981px) {
   .navbar-container {
@@ -626,36 +628,43 @@ html {
       width: 40px;
       height: 40px;
       background-color: $Purple-color;
-      border: 1px solid red;
       i {
         color: white;
         font-size: x-large;
       }
     }
-    .nav-content-right {
-      /* display: block !important;  burada bir sorun var sonra dön */ 
-     
+    .nav-content-right{
+      display: none !important;
+    }
+    .media-nav-content-right {
       background: #212529;
       position: absolute;
       top: 100px;
-      width: 95% !important;
+      width: 95%;
       padding: 20px;
-      border: 1px solid red;
+      transition: all 1s ease-in-out;
+      a{
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.8rem;
+        &:hover {
+          color: $White-color;
+        }
+      }
       .nav-link-header {
         display: inline-block;
-        /* margin-left: 5px; */
         border-bottom: 1px solid $White-color;
-        width: 90% !important;
+        width: 100% !important;
         &:last-child {
           border-bottom: none;
         }
       }
       .drop-down {
         @include flexible-column-center;
-        /* margin-left: 5px; */
         border-bottom: 1px solid $White-color;
-        width: 90%;
-        .media-drop {
+        width: 100%;
+        .mobile-drop {
           width: 100%;
           @include flexible-row-space;
           i {
@@ -664,21 +673,28 @@ html {
           }
         }
         /* .nav-drop{
-
+              burada ne yapılabileceğini değerlendir
         } */
 
-        .drop-list {
+        .media-drop-list {
+          display: none;
           position: relative !important;
           width: 100%;
+          transition: all 1s ease-in-out;
+          
           li {
             background: none !important;
             &:active {
               background-color: $dropDownHoverBg !important;
             }
+            a{
+              color: $White-color;
+            }
           }
         }
       }
     }
+    
   }
 
   /* main section start */
@@ -724,7 +740,7 @@ html {
       .sponsor-header {
         width: 100% !important;
         margin-left: 0% !important;
-        margin-top: 40px ;
+        margin-top: 40px;
         h1 {
           font-size: 1.5rem;
         }
@@ -736,7 +752,7 @@ html {
         height: auto !important;
         .sponsor-card {
           width: 44% !important;
-          height: 45vh !important;
+          height: 50vh !important;
           margin-top: 50px !important;
         }
         .card-text {
@@ -753,7 +769,7 @@ html {
         width: 100% !important;
         margin-left: 0px !important;
         padding-top: 40px !important;
-        h2{
+        h2 {
           font-size: 1.5rem;
         }
       }
@@ -769,7 +785,7 @@ html {
         }
       }
     }
-  /* customer card bölümünü ayarla ve aykuta neden ayrı ayrı iki customer card author olduğunu sor */
+    /* customer card bölümünü ayarla ve aykuta neden ayrı ayrı iki customer card author olduğunu sor */
   }
   /* main section start */
   /* footer seciton start */
@@ -788,7 +804,7 @@ html {
         width: 100%;
         text-align: center;
         height: auto;
-        h2{
+        h2 {
           font-size: 1.2rem;
         }
       }
@@ -796,7 +812,7 @@ html {
         text-align: center;
         width: 100%;
         height: auto;
-        h2{
+        h2 {
           font-size: 1.2rem;
         }
       }
@@ -804,17 +820,15 @@ html {
         text-align: center;
         width: 100%;
         height: auto;
-        h2{
+        h2 {
           font-size: 1.2rem;
         }
-        h4{
+        h4 {
           font-size: 1rem;
         }
       }
-
     }
     .footer-sponsor-container {
-      border: 1px solid red;
       width: 80%;
       height: auto;
     }
@@ -829,7 +843,6 @@ html {
       .copyright {
         margin-top: 10px;
       }
-    
     }
   }
   /* footer seciton end */
