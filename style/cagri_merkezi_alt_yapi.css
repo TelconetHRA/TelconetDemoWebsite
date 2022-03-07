@@ -80,7 +80,6 @@ h5 {
 }
 
 h6 {
-  color: #333;
   font-size: 1em;
   font-weight: 400;
   line-height: 18px;
@@ -159,6 +158,10 @@ h6 {
   padding: 10px;
 }
 
+.yk-container .navbar-container .nav-content-right .drop-down .media-drop i {
+  display: none;
+}
+
 .yk-container .navbar-container .nav-content-right .drop-down .drop-list {
   display: none;
   position: absolute;
@@ -173,7 +176,6 @@ h6 {
   padding: 10px;
   border-bottom: 1px outset grey;
   background-color: #1e1e1e;
-  cursor: pointer;
 }
 
 .yk-container .navbar-container .nav-content-right .drop-down .drop-list li:last-child {
@@ -186,6 +188,7 @@ h6 {
 }
 
 .yk-container .navbar-container .nav-content-right .drop-down .drop-list li:hover a {
+  cursor: pointer;
   color: white;
 }
 
@@ -602,4 +605,270 @@ ul.nav-list li:last-child a {
 }
 
 /* footer section end */
+@media (max-width: 981px) {
+  .navbar-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    padding: 10px !important;
+  }
+  .navbar-container .media-nav-icon {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #312783;
+  }
+  .navbar-container .media-nav-icon i {
+    color: white;
+    font-size: x-large;
+  }
+  .navbar-container .nav-content-right {
+    display: none !important;
+  }
+  .navbar-container .media-nav-content-right {
+    background: #212529;
+    position: absolute;
+    top: 100px;
+    width: 95%;
+    padding: 20px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .navbar-container .media-nav-content-right a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .navbar-container .media-nav-content-right a:hover {
+    color: #777;
+  }
+  .navbar-container .media-nav-content-right .nav-link-header {
+    display: inline-block;
+    border-bottom: 1px solid #777;
+    width: 100% !important;
+  }
+  .navbar-container .media-nav-content-right .nav-link-header:last-child {
+    border-bottom: none;
+  }
+  .navbar-container .media-nav-content-right .drop-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #777;
+    width: 100%;
+    /* .nav-drop{
+              burada ne yapılabileceğini değerlendir
+        } */
+  }
+  .navbar-container .media-nav-content-right .drop-down .mobile-drop {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-container .media-nav-content-right .drop-down .mobile-drop i {
+    display: block !important;
+    color: #777;
+  }
+  .navbar-container .media-nav-content-right .drop-down .media-drop-list {
+    display: none;
+    position: relative !important;
+    width: 100%;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .navbar-container .media-nav-content-right .drop-down .media-drop-list li {
+    background: none !important;
+  }
+  .navbar-container .media-nav-content-right .drop-down .media-drop-list li:active {
+    background-color: #282828 !important;
+  }
+  .navbar-container .media-nav-content-right .drop-down .media-drop-list li a {
+    color: #777;
+  }
+  /* main section start */
+  .main-container {
+    /* customer card bölümünü ayarla ve aykuta neden ayrı ayrı iki customer card author olduğunu sor */
+  }
+  .main-container .video-section .video-text-container {
+    text-align: center;
+  }
+  .main-container .center-page .center-page-box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .main-container .center-page .center-page-box .center-page-text {
+    width: 100% !important;
+  }
+  .main-container .center-page .center-page-box .center-page-text h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #777;
+  }
+  .main-container .center-page .center-page-box .center-page-text p {
+    font-size: 1rem;
+    color: #777;
+  }
+  .main-container .center-page .center-page-box .center-page-img {
+    width: 100% !important;
+  }
+  .main-container .center-page .center-page-box .center-page-img img {
+    width: 100% !important;
+  }
+  .main-container .center-page .page-box-one {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .main-container .center-page .page-box-three {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .main-container .sponsor-page-container .sponsor-header {
+    width: 100% !important;
+    margin-left: 0% !important;
+    margin-top: 40px;
+  }
+  .main-container .sponsor-page-container .sponsor-header h1 {
+    font-size: 1.5rem;
+  }
+  .main-container .sponsor-page-container .sponsor-card-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .main-container .sponsor-page-container .sponsor-card-container .sponsor-card {
+    width: 44% !important;
+    height: 50vh !important;
+    margin-top: 50px !important;
+  }
+  .main-container .sponsor-page-container .sponsor-card-container .card-text h3 {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  .main-container .news-page-container .news-header-text {
+    width: 100% !important;
+    margin-left: 0px !important;
+    padding-top: 40px !important;
+  }
+  .main-container .news-page-container .news-header-text h2 {
+    font-size: 1.5rem;
+  }
+  .main-container .news-page-container .news-card-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .main-container .news-page-container .news-card-container .new-card {
+    width: 100% !important;
+  }
+  .main-container .news-page-container .news-card-container .new-card .news-card-text {
+    text-align: center;
+    padding: 20px;
+  }
+  /* main section start */
+  /* footer seciton start */
+  .footer-container .information-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container .information-section .footer-logo {
+    width: 100%;
+    height: 20vh;
+  }
+  .footer-container .information-section .footer-logo img {
+    width: 40%;
+  }
+  .footer-container .information-section .about {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .footer-container .information-section .about h2 {
+    font-size: 1.2rem;
+  }
+  .footer-container .information-section .links {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .footer-container .information-section .links h2 {
+    font-size: 1.2rem;
+  }
+  .footer-container .information-section .contact {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .footer-container .information-section .contact h2 {
+    font-size: 1.2rem;
+  }
+  .footer-container .information-section .contact h4 {
+    font-size: 1rem;
+  }
+  .footer-container .footer-sponsor-container {
+    width: 80%;
+    height: auto;
+  }
+  .footer-container .down-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .footer-container .down-footer a {
+    width: 40%;
+  }
+  .footer-container .down-footer .copyright {
+    margin-top: 10px;
+  }
+  /* footer seciton end */
+}
 /*# sourceMappingURL=cagri_merkezi_alt_yapi.css.map */

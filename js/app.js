@@ -58,7 +58,7 @@ owl.owlCarousel({
             items: 1
         },
         476: {
-            items: 1
+            items: 2
         },
         768: {
             items: 3
