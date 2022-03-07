@@ -23,11 +23,11 @@
 
 body {
   background-color: #FFF;
-    color: #777;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    margin: 0;
+	color: #777;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	margin: 0;
 }
 h1,h2,h3,h4,h5{
   color: #212529;
@@ -35,42 +35,41 @@ h1,h2,h3,h4,h5{
   -webkit-font-smoothing: antialiased;
 }
 h1 {
-    font-size: 2.6em;
-    line-height: 44px;
+	font-size: 2.6em;
+	line-height: 44px;
   &.h1-text{
     font-size: 1em;
 }
 }
 
 h2 {
-    font-size: 2.2em;
-    font-weight: 300;
-    line-height: 42px;
+	font-size: 2.2em;
+	font-weight: 300;
+	line-height: 42px;
 }
 
 h3 {
-    font-size: 1.8em;
-    font-weight: 400;
-    line-height: 24px;
+	font-size: 1.8em;
+	font-weight: 400;
+	line-height: 24px;
 }
 
 h4 {
-    font-size: 1.4em;
-    font-weight: 600;
-    line-height: 27px;
+	font-size: 1.4em;
+	font-weight: 600;
+	line-height: 27px;
 }
 
 h5 {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 18px;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 18px;
 }
 
 h6 {
-    color: #333;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 18px;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 18px;
 }
 
   .yk-container {
@@ -85,38 +84,36 @@ h6 {
       z-index: 10;
       background: none;
       padding: 30px;
-
       .nav-img {
         align-self: flex-start;
         width: 20%;
-
         img {
           height: 6vh;
         }
       }
-
+      
       .nav-content-right {
         @include flexible-row-center;
         width: 50%;
-
         a {
           color: white;
           text-decoration: none;
           font-weight: 600;
           font-size: 0.8rem;
-
           &:hover {
             color: $White-color;
           }
         }
-
         .nav-link-header {
           padding: 10px;
         }
-
         .drop-down {
           padding: 10px;
-
+          .media-drop {
+            i {
+              display: none;
+            }
+          }
           .drop-list {
             display: none;
             position: absolute;
@@ -124,28 +121,23 @@ h6 {
             margin: 0;
             padding: 0;
             top: 70%;
-
+  
             li {
               width: 100%;
               padding: 10px;
               border-bottom: 1px outset grey;
               background-color: $dropDownBgColor;
-              cursor: pointer;
-
-
               &:last-child {
                 border: none;
               }
-
               &:hover {
                 background-color: $dropDownHoverBg;
                 opacity: 0.9;
               }
-
               &:hover a {
+                cursor: pointer;
                 color: white;
               }
-
               a {
                 color: $White-color;
                 width: 100%;
@@ -154,19 +146,16 @@ h6 {
             }
           }
         }
-
         .drop-one {
           &:hover .drop-list {
             display: block;
           }
         }
-
         .drop-two {
           &:hover .drop-list {
             display: block;
           }
         }
-
         .drop-three {
           &:hover .drop-list {
             display: block;
@@ -293,8 +282,8 @@ ul {
 /*--------  Overlays -------- */
 
 .overlay {
-    position: relative;
-    /* Backward */
+	position: relative;
+	/* Backward */
   .container{
     position: relative;
     z-index: 3;
@@ -303,17 +292,17 @@ ul {
 }
 
 .overlay:before {
-    content:' ';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    background: #212529;
-    opacity: 0.8;
-    pointer-events: none;
-    transition: ease opacity 300ms 100ms;
+	content:' ';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	background: #212529;
+	opacity: 0.8;
+	pointer-events: none;
+	transition: ease opacity 300ms 100ms;
 }
 
 
@@ -495,3 +484,236 @@ ul {
 }
 /* footer section end */
 
+// media query
+
+@media (max-width: 981px) {
+  .navbar-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 10px !important;
+    .media-nav-icon {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: $Purple-color;
+      i {
+        color: white;
+        font-size: x-large;
+      }
+    }
+    .nav-content-right{
+      display: none !important;
+    }
+    .media-nav-content-right {
+      background: #212529;
+      position: absolute;
+      top: 100px;
+      width: 95%;
+      padding: 20px;
+      transition: all 1s ease-in-out;
+      a{
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.8rem;
+        &:hover {
+          color: $White-color;
+        }
+      }
+      .nav-link-header {
+        display: inline-block;
+        border-bottom: 1px solid $White-color;
+        width: 100% !important;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      .drop-down {
+        @include flexible-column-center;
+        border-bottom: 1px solid $White-color;
+        width: 100%;
+        .mobile-drop {
+          width: 100%;
+          @include flexible-row-space;
+          i {
+            display: block !important;
+            color: $White-color;
+          }
+        }
+        /* .nav-drop{
+              burada ne yapılabileceğini değerlendir
+        } */
+
+        .media-drop-list {
+          display: none;
+          position: relative !important;
+          width: 100%;
+          transition: all 1s ease-in-out;
+          
+          li {
+            background: none !important;
+            &:active {
+              background-color: $dropDownHoverBg !important;
+            }
+            a{
+              color: $White-color;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+  /* main section start */
+  .main-container {
+    .video-section {
+      .video-text-container {
+        text-align: center;
+      }
+    }
+
+    .center-page {
+      .center-page-box {
+        flex-direction: column !important;
+        .center-page-text {
+          width: 100% !important;
+          h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $White-color;
+          }
+          p {
+            font-size: 1rem;
+            color: $White-color;
+          }
+        }
+        .center-page-img {
+          width: 100% !important;
+          img {
+            width: 100% !important;
+          }
+        }
+      }
+
+      .page-box-one {
+        flex-direction: column-reverse !important;
+      }
+      .page-box-three {
+        flex-direction: column-reverse !important;
+      }
+    }
+
+    .sponsor-page-container {
+      .sponsor-header {
+        width: 100% !important;
+        margin-left: 0% !important;
+        margin-top: 40px;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .sponsor-card-container {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        width: 100% !important;
+        height: auto !important;
+        .sponsor-card {
+          width: 44% !important;
+          height: 50vh !important;
+          margin-top: 50px !important;
+        }
+        .card-text {
+          h3 {
+            font-size: 0.8rem;
+            padding: 5px;
+          }
+        }
+      }
+    }
+
+    .news-page-container {
+      .news-header-text {
+        width: 100% !important;
+        margin-left: 0px !important;
+        padding-top: 40px !important;
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .news-card-container {
+        flex-direction: column !important;
+        .new-card {
+          width: 100% !important;
+          .news-card-text {
+            text-align: center;
+            padding: 20px;
+          }
+        }
+      }
+    }
+    /* customer card bölümünü ayarla ve aykuta neden ayrı ayrı iki customer card author olduğunu sor */
+  }
+  /* main section start */
+  /* footer seciton start */
+  .footer-container {
+    .information-section {
+      flex-direction: column;
+      .footer-logo {
+        width: 100%;
+        height: 20vh;
+        img {
+          width: 40%;
+        }
+      }
+
+      .about {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+      .links {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+      .contact {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        h2 {
+          font-size: 1.2rem;
+        }
+        h4 {
+          font-size: 1rem;
+        }
+      }
+    }
+    .footer-sponsor-container {
+      width: 80%;
+      height: auto;
+    }
+
+    .down-footer {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+      a {
+        width: 40%;
+      }
+      .copyright {
+        margin-top: 10px;
+      }
+    }
+  }
+  /* footer seciton end */
+}
